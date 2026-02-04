@@ -6,7 +6,7 @@ Widget::Widget(QWidget *parent)
     , ui(new Ui::Widget)
 {
     ui->setupUi(this);
-    setFixedHeight(200, 120);
+    setFixedSize(200, 120);
     QPushButton *quit = new QPushButton(tr("QUIT APPLICATION"),this);
     quit->setGeometry(62,40,75,30);
     quit->setFont(QFont("Times",18,QFont::Bold));
@@ -17,3 +17,4 @@ Widget::~Widget()
 {
     delete ui;
 }
+
